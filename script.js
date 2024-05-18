@@ -10,10 +10,10 @@ todoInput.addEventListener('keypress', function(e){
 });
 
 function addTodo() {
-    const todoText = todoInput.value.trim();
-    if(todoText!==''){
+    const todotext = todoInput.value.trim();
+    if(todotext!==''){
         const li = document.createElement('li');
-        li.textContent = todoText;
+        li.textContent = todotext;
         todolist.appendChild(li);
         todoInput.value='';
     }
